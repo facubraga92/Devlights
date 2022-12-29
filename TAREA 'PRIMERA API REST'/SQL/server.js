@@ -4,7 +4,8 @@ app.use(express.json())
 app.listen(3000);
 
 
-
+const login = require('./middlewares/login');
+app.use(login);
 
 
 const routerApi = require('./routes/api');
